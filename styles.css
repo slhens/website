@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(226, 226, 226);
+    
+}
+
+.menu-container {
+    margin-top:20px;
+    display: flex;
+    justify-content:  space-around;
+    color: white;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(184, 184, 184);
+          
+}
+
+.menu {
+    
+    display: flex;
+    justify-content:  end;
+    color: white;
+    background-color: transparent;
+    
+     
+}
+
+
+
+.menu-yazı {
+    margin: 2rem;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    transition: .5s;
+    
+}
+
+.menu-yazı:hover {
+    padding: 1rem;
+    border-radius: 2rem;
+    transform: scale(1.1);
+    background-color: rgb(153, 153, 153);
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+}
+
+.isim-container {
+    padding: 2rem;
+    font-style: normal;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.isim {
+    text-decoration: none;
+    font-family: 'Whisper';
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+   
+    
+}
+.mimar {
+    color: rgb(177, 177, 177);
+}
+
+
+.hakkında-container {
+    padding: 6rem;
+    display: flex;
+        
+}
+
+.hakkında-container img {
+    
+    max-width: 400px;
+    height: auto;
+}
+
+.hakkında { 
+    padding-top: 100px;
+    width: 130vh;
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    
+}
+
+.koyu {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.grup {
+    padding-top: 20px;
+}
+
+.bi {
+    text-decoration: none;
+    color: black;
+
+    
+}
+.ustyazi{
+    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.ben{
+    font-size: 4rem;
+}
+
+.yazi {
+    padding-top: 270px;
+    font-size: 2.7rem;
+    text-align: left;
+    padding-bottom: 270px;
+    cursor: default ;
+ 
+}
+
+
+
+.projeler-container {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    font-size: 5rem;
+    font-weight: bolder;
+    
+}
+
+.başlık {
+    
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-weight: bolder;
+    padding-left: 70px;
+
+}
+
+.projeler {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    
+}
+
+
+.proje {  
+    display: flex;
+    border: 2px red;
+    
+}  
+
+.proje:hover img{  
+    transform: scale(1.1);
+    opacity: .5;
+} 
+
+.proje:hover .dersadı {  
+    
+    opacity: 1;
+} 
+
+.proje img {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: flex;
+    position: relative;
+    transition: 0.5s;
+
+}
+
+
+
+.dersadı {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    opacity: 0;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.hata {
+    padding-top: 200px;
+    text-align: center;
+    font-size: 80px;
+    cursor: default;
+}
+
+
