@@ -82,7 +82,7 @@ function myfunc() {
 
 			// Outputting this message to index.html 
 			// page with id result. 
-			$('#result').html('Sen kırarsın.????'); 
+			$('#result').html('Tebrikler, başardın.????'); 
 
 			// Opening popup modal 
 			$('#popup').modal('toggle'); 
