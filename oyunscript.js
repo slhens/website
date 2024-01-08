@@ -39,34 +39,34 @@ let h5_c = num1;
 
 // Putting hints to index.html page 
 document.getElementById('h1').innerHTML = 
-	`<input type="text" id="b1" value="${h1_a} 
-	" readonly> <input type="text" id="b1" value=" 
-	${h1_b}" readonly> <input type="text" id="b1"
+	`<input type="text" id="b1" 
+	value="${h1_a}" readonly> <input type="text" id="b1" 
+	value="${h1_b}" readonly> <input type="text" id="b1" 
 	value="${h1_c}" readonly> `; 
 
 document.getElementById('h2').innerHTML = 
-	`<input type="text" id="b1" value="${h2_a} 
-	" readonly> <input type="text" id="b1"
-	value="${h2_b}" readonly> <input type="text"
-	id="b1" value="${h2_c}" readonly> `; 
+	`<input type="text" id="b1" 
+	value="${h2_a}" readonly> <input type="text" id="b1" 
+	value="${h2_b}" readonly> <input type="text" id="b1" 
+	value="${h2_c}" readonly> `;   
 
 document.getElementById('h3').innerHTML = 
-	`<input type="text" id="b1" value="${h3_a} 
-	" readonly> <input type="text" id="b1"
-	value="${h3_b}" readonly> <input type="text"
-	id="b1" value="${h3_c}" readonly> `; 
+	`<input type="text" id="b1" 
+	value="${h3_a}" readonly> <input type="text" id="b1" 
+	value="${h3_b}" readonly> <input type="text" id="b1" 
+	value="${h3_c}" readonly> `;  
 
 document.getElementById('h4').innerHTML = 
-	`<input type="text" id="b1" value="${h4_a} 
-	" readonly> <input type="text" id="b1"
-	value="${h4_b}" readonly> <input type="text"
-	id="b1" value="${h4_c}" readonly> `; 
+	`<input type="text" id="b1" 
+	value="${h4_a}" readonly> <input type="text" id="b1" 
+	value="${h4_b}" readonly> <input type="text" id="b1" 
+	value="${h4_c}" readonly> `; 
 
 document.getElementById('h5').innerHTML = 
-	`<input type="text" id="b1" value="${h5_a} 
-	" readonly> <input type="text" id="b1"
-	value="${h5_b}" readonly> <input type="text"
-	id="b1" value="${h5_c}" readonly> `; 
+	`<input type="text" id="b1" 
+	value="${h5_a}" readonly> <input type="text" id="b1" 
+	value="${h5_b}" readonly> <input type="text" id="b1" 
+	value="${h5_c}" readonly> `;  
 
 // Function to check whether game is solved or not 
 function myfunc() { 
