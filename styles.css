@@ -2,9 +2,59 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(226, 226, 226);
-    
 }
+
+body {
+    background-color: #dadadc;
+    transition: background 0.2s linear;
+}
+
+body.dark {background-color: #37363d;}
+
+body.dark .menu-container, body.dark .menu-footer, body.dark p1 {background-color: #26262a;}
+
+body.dark .menu-yazı, body.dark .isim, body.dark .hakkında-container, body.dark .menu-yazı-footer, 
+body.dark p1, body.dark .bi, body.dark .ustyazi, body.dark .başlık, body.dark .dersadı {color: #fff;}
+
+body.dark  .checkbox-label{ background-color: #111;}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #6b6b6b;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {color: #f1c40f;}
+
+.fa-sun {color: #f39c12;}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
 
 .menu-container {
     margin-top:20px;
@@ -13,12 +63,12 @@
     color: white;
     flex-wrap: wrap;
     align-items: center;
-    background-color: rgb(184, 184, 184);
+    background-color: #b7b6b9;
           
 }
 
 .menu {
-    
+    gap: 10%;
     display: flex;
     justify-content:  end;
     color: white;
@@ -30,25 +80,25 @@
 
 
 .menu-yazı {
-    margin: 2rem;
     font-size: 1.5rem;
     color: rgb(0, 0, 0);
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     background-color: transparent;
-    transition: .5s;
+    transition: .2s;
     
 }
 
 .menu-yazı:hover {
-    padding: 1rem;
-    border-radius: 2rem;
-    transform: scale(1.1);
-    background-color: rgb(153, 153, 153);
     color: rgb(255, 255, 255);
-    font-size: 1.6rem;
+}
+
+body.dark .menu-yazı:hover {
+    color: #f1c40f;
+    
 }
 
 .isim-container {
@@ -77,15 +127,21 @@
 
 
 .hakkında-container {
-    padding: 6rem;
+    padding: 4.5%;
     display: flex;
-        
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.foto{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .hakkında-container img {
-    
     max-width: 400px;
-    height: auto;
+   
+    
 }
 
 .hakkında { 
@@ -96,6 +152,7 @@
     line-height: 40px;
     
 }
+
 
 .koyu {
     font-weight: bold;
@@ -121,6 +178,8 @@
     
 }
 
+
+
 .ben{
     font-size: 4rem;
 }
@@ -139,6 +198,7 @@
 .projeler-container {
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 5%;
     display: flex;
     flex-direction: column;
     font-size: 5rem;
@@ -212,6 +272,7 @@
 }
 
 .hata {
+    padding-bottom: 200px;
     padding-top: 200px;
     text-align: center;
     font-size: 80px;
@@ -219,3 +280,41 @@
 }
 
 
+
+.menu-footer {
+    
+    display: flex;
+    justify-content:  center;
+    color: white;
+    background-color: rgb(184, 184, 184);
+    
+    
+    }
+
+.menu-yazı-footer {
+    margin: 1%;
+    font-size: 1.3rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+
+.menu-yazı-footer:hover {
+    color: rgb(255, 255, 255);
+}
+
+body.dark .menu-yazı-footer:hover {
+    color: #f1c40f;
+}
+
+
+p1 {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    background-color: rgb(184, 184, 184);
+    
+}
