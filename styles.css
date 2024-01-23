@@ -18,6 +18,8 @@ body.dark p1, body.dark .bi, body.dark .ustyazi, body.dark .başlık, body.dark 
 
 body.dark .toggle{ background-color: #111;}
 
+body.dark #button {background-color: #f39c12;}
+
 .toggle {
 position: relative;
 display: flex;
@@ -298,3 +300,42 @@ p1 {
     display: flex;
     justify-content: center;
 }
+
+#button {
+    display: inline-block;
+    background-color: #636363;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition:.3s; 
+    opacity: .5s;
+    visibility: .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  

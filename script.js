@@ -38,3 +38,23 @@ if(saat>=18 && saat<22) {
 if(saat>=22 && saat<24) {
   document.getElementById("time").innerHTML = "İyi Geceler, Ben";
 }
+
+// sayfa başına çıkaran buton
+
+var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
+
