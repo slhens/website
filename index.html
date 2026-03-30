@@ -1,76 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salih Enes Çalık</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-</head>
-<body>    
-    <div class="menu-container">
-        <div class="isim-container">
-           <a class="isim" href="index.html">Salih Enes Çalık</a>
-        </div>
-       <div class="menu">
-           <a class="menu-yazı" href="index.html">Anasayfa</a>
-           <a class="menu-yazı" href="hakkında.html">Hakkında</a>
-           <a class="menu-yazı" href="projeler.html">Projeler</a>
-               <div class="toggle">
-                   <i class="fas fa-moon"></i>
-                   <i class="fas fa-sun"></i>
-               </div>
-      </div>
-  </div>
-        <div class="ustyazi">
-            <div class="yazi">
-                <div id="time" class="ben"></div>
-                <h1>Salih Enes Çalık</h1>
-                <h5 class="mimar">Mimar, Web Tasarımcı</h5>
-        </div>
-        </div>
-        
+<html lang="tr">
 
-    <div class="projeler-container">
-            <div class="başlık">PROJELER</div>
-        <div class="projeler">
-            <a class="proje" href="projeler.html"> <img src="images/dpkapak.jpg" alt="">
-                <div class="dersadı">Diploma Projesi</div>
-            </a>
-            <a class="proje" href="projeler.html"> <img src="images/mp4kapak.jpg" alt="">
-                <div class="dersadı">Mimari Proje 4</div>
-            </a>
-            <a class="proje" href="projeler.html"> <img src="images/mp3kapak.jpg" alt="">
-                <div class="dersadı">Mimari Proje 3</div>
-            </a>
-            <a class="proje" href="projeler.html"> <img src="images/mp2kapak.jpg" alt="">
-                <div class="dersadı">Mimari Proje 2</div>
-            </a>
-            <a class="proje" href="projeler.html"> <img src="images/upkapak.jpg" alt="">
-                <div class="dersadı">Uygulama Projesi</div>
-            </a>
-            
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Çalık — Architect | Istanbul</title>
+  <meta name="description" content="Çalık Architect — Konut Mimarisi, İç Mimari / Residential Architecture, Interior Design.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="grain"></div>
+  <div class="cursor-dot"></div>
+  <div class="page-transition"></div>
+
+  <header>
+    <a href="index.html" class="logo">Çalık</a>
+    <div class="lang-switch"><a href="#">TR</a> <span>/</span> <a href="#">EN</a></div>
+    <nav>
+      <a href="about.html"><span class="lang-tr">Hakkında</span><span class="lang-en">About</span></a>
+      <a href="works.html"><span class="lang-tr">Projeler</span><span class="lang-en">Works</span></a>
+      <a href="approach.html"><span class="lang-tr">Yaklaşım</span><span class="lang-en">Approach</span></a>
+      <a href="awards.html"><span class="lang-tr">Ödüller</span><span class="lang-en">Awards</span></a>
+      <a href="contact.html"><span class="lang-tr">İletişim</span><span class="lang-en">Contact</span></a>
+    </nav>
+    <button class="hamburger" aria-label="Menü"><span></span><span></span><span></span></button>
+  </header>
+  <div class="mobile-nav">
+    <a href="index.html"><span class="lang-tr">Ana Sayfa</span><span class="lang-en">Home</span></a>
+    <a href="about.html"><span class="lang-tr">Hakkında</span><span class="lang-en">About</span></a>
+    <a href="works.html"><span class="lang-tr">Projeler</span><span class="lang-en">Works</span></a>
+    <a href="approach.html"><span class="lang-tr">Yaklaşım</span><span class="lang-en">Approach</span></a>
+    <a href="awards.html"><span class="lang-tr">Ödüller</span><span class="lang-en">Awards</span></a>
+    <a href="contact.html"><span class="lang-tr">İletişim</span><span class="lang-en">Contact</span></a>
+    <div class="mobile-lang-switch"><a href="#">TR</a> <span>/</span> <a href="#">EN</a></div>
+  </div>
+
+  <section class="hero" id="hero">
+    <p class="hero-tagline reveal">
+      <span class="lang-tr">Mimari Stüdyo — İstanbul</span>
+      <span class="lang-en">Architecture Studio — Istanbul</span>
+    </p>
+    <h1 class="reveal reveal-delay-1">SPACE<br>IS <span>THOUGHT</span></h1>
+    <div class="hero-bottom">
+      <div class="hero-info reveal reveal-delay-2">
+        <p><strong>Emre Çalık</strong></p>
+        <p><span class="lang-tr">Mimar / Architect</span><span class="lang-en">Architect</span></p>
+      </div>
+      <div class="scroll-indicator reveal reveal-delay-3">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
     </div>
-    <footer>
-        <div class="footer-container">        
-            <div class="hesaplar-footer">
-                <a href="https://instagram.com/salihenescalik?igshid=OGQ5ZDc2ODk2ZA==" class="bi bi-instagram"></a>
-                <a href="https://www.linkedin.com/in/salih-enes-%C3%A7al%C4%B1k-545642250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="bi bi-linkedin"></a>
-            </div>
-            <div class="menu-footer">
-                <a class="menu-yazı-footer" href="index.html">Anasayfa</a>
-                <a class="menu-yazı-footer" href="hakkında.html">Hakkında</a>
-                <a class="menu-yazı-footer" href="projeler.html">Projeler</a>
-            </div>
-            <p1>Salih Enes Çalık © 2024</p1>
-        </div>
-    </footer>
-    <a id="button"></a>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script  src="./script.js"></script>
+  </section>
+
+  <footer>
+    <span>
+      <span class="lang-tr">&copy; 2026 Emre Çalık. Tüm hakları saklıdır.</span>
+      <span class="lang-en">&copy; 2026 Emre Çalık. All rights reserved.</span>
+    </span>
+    <div class="footer-links">
+      <a href="index.html"><span class="lang-tr">Ana Sayfa</span><span class="lang-en">Home</span></a>
+      <a href="about.html"><span class="lang-tr">Hakkında</span><span class="lang-en">About</span></a>
+      <a href="works.html"><span class="lang-tr">Projeler</span><span class="lang-en">Works</span></a>
+      <a href="contact.html"><span class="lang-tr">İletişim</span><span class="lang-en">Contact</span></a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
+
 </html>

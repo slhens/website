@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact / İletişim — Çalık Architect</title>
+  <meta name="description"
+    content="İletişim / Contact — Çalık Architect.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="contact-page">
+
+  <div class="grain"></div>
+  <div class="cursor-dot"></div>
+  <div class="page-transition"></div>
+
+  <header class="header-dark">
+    <a href="index.html" class="logo">Çalık</a>
+    <div class="lang-switch"><a href="#">TR</a> <span>/</span> <a href="#">EN</a></div>
+    <nav>
+      <a href="about.html"><span class="lang-tr">Hakkında</span><span class="lang-en">About</span></a>
+      <a href="works.html"><span class="lang-tr">Projeler</span><span class="lang-en">Works</span></a>
+      <a href="approach.html"><span class="lang-tr">Yaklaşım</span><span class="lang-en">Approach</span></a>
+      <a href="awards.html"><span class="lang-tr">Ödüller</span><span class="lang-en">Awards</span></a>
+      <a href="contact.html" class="active"><span class="lang-tr">İletişim</span><span class="lang-en">Contact</span></a>
+    </nav>
+    <button class="hamburger" aria-label="Menü"><span></span><span></span><span></span></button>
+  </header>
+  <div class="mobile-nav">
+    <a href="index.html"><span class="lang-tr">Ana Sayfa</span><span class="lang-en">Home</span></a>
+    <a href="about.html"><span class="lang-tr">Hakkında</span><span class="lang-en">About</span></a>
+    <a href="works.html"><span class="lang-tr">Projeler</span><span class="lang-en">Works</span></a>
+    <a href="approach.html"><span class="lang-tr">Yaklaşım</span><span class="lang-en">Approach</span></a>
+    <a href="awards.html"><span class="lang-tr">Ödüller</span><span class="lang-en">Awards</span></a>
+    <a href="contact.html"><span class="lang-tr">İletişim</span><span class="lang-en">Contact</span></a>
+    <div class="mobile-lang-switch"><a href="#">TR</a> <span>/</span> <a href="#">EN</a></div>
+  </div>
+
+  <div class="page-content" style="padding-top:0;">
+    <section class="contact" id="contact"
+      style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;">
+      <div class="section-label reveal">
+        <span class="lang-tr">İletişim</span><span class="lang-en">Contact</span>
+      </div>
+      <div class="contact-big reveal reveal-delay-1">LET'S BUILD<br><span>SOMETHING</span></div>
+      <a href="mailto:emre@calik-architects.com"
+        class="contact-email reveal reveal-delay-2">emre@calik-architects.com</a>
+      <div class="contact-grid">
+        <div>
+          <div class="social-links reveal reveal-delay-3">
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Behance</a>
+          </div>
+        </div>
+        <form class="contact-form reveal reveal-delay-2">
+          <div class="form-group">
+            <input type="text" placeholder="İsim / Name" required id="contact-name">
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="E-posta / Email" required id="contact-email-input">
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Mesajınız / Your Message" required id="contact-message"></textarea>
+          </div>
+          <!-- Buton script.js üzerinden yönetildiği için orijinal dilde kalabilir -->
+          <button type="submit" class="submit-btn"><span class="lang-tr">MESAJ GÖNDER</span><span class="lang-en">SEND MESSAGE</span></button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <span>
+      <span class="lang-tr">&copy; 2026 Emre Çalık. Tüm hakları saklıdır.</span>
+      <span class="lang-en">&copy; 2026 Emre Çalık. All rights reserved.</span>
+    </span>
+    <div class="footer-links">
+      <a href="index.html"><span class="lang-tr">Ana Sayfa</span><span class="lang-en">Home</span></a>
+      <a href="about.html"><span class="lang-tr">Hakkında</span><span class="lang-en">About</span></a>
+      <a href="works.html"><span class="lang-tr">Projeler</span><span class="lang-en">Works</span></a>
+      <a href="contact.html"><span class="lang-tr">İletişim</span><span class="lang-en">Contact</span></a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
