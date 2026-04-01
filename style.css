@@ -100,11 +100,11 @@ header.header-dark.scrolled .lang-switch a.active { color: var(--cream); }
 .mobile-nav {
   position: fixed; inset: 0; background: var(--cream); z-index: 999;
   display: flex; flex-direction: column; align-items: center; justify-content: center;
-  gap: 2rem; opacity: 0; visibility: hidden; transition: opacity .4s, visibility .4s;
+  gap: clamp(1rem, 3vh, 2rem); opacity: 0; visibility: hidden; transition: opacity .4s, visibility .4s;
 }
 .mobile-nav.open { opacity: 1; visibility: visible; }
 .mobile-nav a {
-  font-family: var(--serif); font-size: 2.5rem; font-weight: 700;
+  font-family: var(--serif); font-size: clamp(1.5rem, 4.5vh, 2.5rem); font-weight: 700;
   color: var(--dark); text-decoration: none; letter-spacing: .05em;
 }
 
