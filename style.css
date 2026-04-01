@@ -542,6 +542,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+  html, body, * { cursor: auto !important; }
+  .cursor-dot { display: none !important; }
+
   header { padding: 1.2rem 1.5rem; }
   .hamburger { display: flex; }
   nav, .lang-switch { display: none; }
