@@ -209,3 +209,14 @@ if (workRows.length > 0 && workPreview) {
     });
   });
 }
+
+// ── BFCACHE FIX (Back Button Support) ──
+window.addEventListener('pageshow', (e) => {
+  if (e.persisted) {
+    const transition = document.querySelector('.page-transition');
+    if (transition) {
+      transition.classList.remove('exit');
+      transition.classList.add('entered');
+    }
+  }
+});
