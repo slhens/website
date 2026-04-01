@@ -46,14 +46,14 @@ header {
   transition: padding .4s, background .4s, backdrop-filter .4s;
 }
 header.scrolled {
-  padding: .9rem 3rem; background: rgba(245,242,238,.85); backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid rgba(26,26,26,.06);
+  padding: .9rem 3rem; background: var(--cream);
+  border-bottom: 1px solid rgba(26,26,26,.06);
 }
 
 /* Dark Header (Project Details & Contact) */
 header.header-dark a, header.header-dark .logo { color: var(--cream); }
 header.header-dark .hamburger span { background: var(--cream); }
-header.header-dark.scrolled { background: rgba(26,26,26,.88); }
+header.header-dark.scrolled { background: var(--dark); border-bottom: 1px solid rgba(245,242,238,.06); }
 header.header-dark.scrolled a, header.header-dark.scrolled .logo { color: var(--cream); }
 
 .logo {
