@@ -20,7 +20,9 @@
     <a href="index.html" class="logo">Çalık</a>
     <div class="lang-switch"><a href="#">TR</a> <span>/</span> <a href="#">EN</a></div>
     <nav>
+      <a href="index.html"><span class="lang-tr">Ana Sayfa</span><span class="lang-en">Home</span></a>
       <a href="about.html"><span class="lang-tr">Hakkında</span><span class="lang-en">About</span></a>
+      <a href="team.html"><span class="lang-tr">Ekip</span><span class="lang-en">Team</span></a>
       <a href="works.html"><span class="lang-tr">Projeler</span><span class="lang-en">Works</span></a>
       <a href="approach.html"><span class="lang-tr">Yaklaşım</span><span class="lang-en">Approach</span></a>
       <a href="awards.html"><span class="lang-tr">Ödüller</span><span class="lang-en">Awards</span></a>
@@ -31,6 +33,7 @@
   <div class="mobile-nav">
     <a href="index.html"><span class="lang-tr">Ana Sayfa</span><span class="lang-en">Home</span></a>
     <a href="about.html"><span class="lang-tr">Hakkında</span><span class="lang-en">About</span></a>
+    <a href="team.html"><span class="lang-tr">Ekip</span><span class="lang-en">Team</span></a>
     <a href="works.html"><span class="lang-tr">Projeler</span><span class="lang-en">Works</span></a>
     <a href="approach.html"><span class="lang-tr">Yaklaşım</span><span class="lang-en">Approach</span></a>
     <a href="awards.html"><span class="lang-tr">Ödüller</span><span class="lang-en">Awards</span></a>
@@ -43,15 +46,73 @@
       <span class="lang-tr">Mimari Stüdyo — İstanbul</span>
       <span class="lang-en">Architecture Studio — Istanbul</span>
     </p>
-    <h1 class="reveal reveal-delay-1">SPACE<br>IS <span>THOUGHT</span></h1>
+    <h1 class="reveal reveal-delay-1">
+      <span class="lang-tr">MEKÂN<br><span class="accent">DÜŞÜNCEDİR</span></span>
+      <span class="lang-en">SPACE<br>IS <span class="accent">THOUGHT</span></span>
+    </h1>
     <div class="hero-bottom">
       <div class="hero-info reveal reveal-delay-2">
         <p><strong>Emre Çalık</strong></p>
-        <p><span class="lang-tr">Mimar / Architect</span><span class="lang-en">Architect</span></p>
+        <p><span class="lang-tr">Mimar</span><span class="lang-en">Architect</span></p>
       </div>
       <div class="scroll-indicator reveal reveal-delay-3">
-        <span>Scroll</span>
+        <span><span class="lang-tr">Kaydır</span><span class="lang-en">Scroll</span></span>
         <div class="scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE PROJECTS SECTION -->
+  <section class="interactive-works pt-0 pb-0">
+    <div class="works-list">
+      <!-- Hover Image Preview Container -->
+      <div class="work-preview">
+        <img src="images/project1.png" alt="Preview 1" id="preview-1" class="preview-img">
+        <img src="images/project2.png" alt="Preview 2" id="preview-2" class="preview-img">
+        <img src="images/project3.png" alt="Preview 3" id="preview-3" class="preview-img">
+        <img src="images/project4.png" alt="Preview 4" id="preview-4" class="preview-img">
+      </div>
+      
+      <!-- List Items -->
+      <a href="kuzguncuk-residence.html" class="work-row reveal" data-preview="preview-1">
+        <span class="w-num">01</span>
+        <h2 class="w-title">Kuzguncuk Residence</h2>
+        <span class="w-cat"><span class="lang-tr">Konut</span><span class="lang-en">Residential</span></span>
+      </a>
+      <a href="beykoz-kultur-merkezi.html" class="work-row reveal reveal-delay-1" data-preview="preview-2">
+        <span class="w-num">02</span>
+        <h2 class="w-title"><span class="lang-tr">Beykoz Kültür Merkezi</span><span class="lang-en">Beykoz Cultural Center</span></h2>
+        <span class="w-cat"><span class="lang-tr">Kamusal</span><span class="lang-en">Public</span></span>
+      </a>
+      <a href="nisantasi-penthouse.html" class="work-row reveal reveal-delay-1" data-preview="preview-3">
+        <span class="w-num">03</span>
+        <h2 class="w-title"><span class="lang-tr">Nişantaşı Penthouse</span><span class="lang-en">Nisantasi Penthouse</span></h2>
+        <span class="w-cat"><span class="lang-tr">İç Mimari</span><span class="lang-en">Interior</span></span>
+      </a>
+      <a href="kadikoy-waterfront.html" class="work-row reveal reveal-delay-2" data-preview="preview-4">
+        <span class="w-num">04</span>
+        <h2 class="w-title"><span class="lang-tr">Kadıköy Waterfront</span><span class="lang-en">Kadikoy Waterfront</span></h2>
+        <span class="w-cat"><span class="lang-tr">Kentsel Tasarım</span><span class="lang-en">Urban</span></span>
+      </a>
+    </div>
+    <div class="works-cta text-center mt-4 mb-5 reveal">
+      <a href="works.html" class="submit-btn" style="text-decoration:none; display:inline-flex; border: 1px solid var(--dark); background: transparent; color: var(--dark); padding: 1.2rem 3rem;">
+        <span class="submit-btn-text">
+          <span class="lang-tr">TÜM PROJELERİ GÖR</span><span class="lang-en">VIEW ALL WORKS</span>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <!-- MANIFESTO SECTION -->
+  <section class="manifesto pb-4">
+    <div class="manifesto-grid">
+      <div class="manifesto-quote-mark reveal">"</div>
+      <div class="manifesto-text reveal reveal-delay-1">
+        <h2 class="lang-tr">Sadece duvarlar inşa etmiyoruz—boşluğa karakter, ışığa form ve yaşama çerçeve tasarlıyoruz.</h2>
+        <h2 class="lang-en">We don't just build walls—we design character for the void, form for the light, and a frame for life.</h2>
+        <p class="lang-tr">Brütalist dokuların estetiğinde, fonksiyonun saflığında ve insanın mekânla kurduğu duygusal bağda kusursuzluğu arıyoruz.</p>
+        <p class="lang-en">We seek perfection in the aesthetics of brutalist textures, the purity of function, and the emotional bond between human and space.</p>
       </div>
     </div>
   </section>

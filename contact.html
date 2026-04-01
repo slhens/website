@@ -21,7 +21,9 @@
     <a href="index.html" class="logo">Çalık</a>
     <div class="lang-switch"><a href="#">TR</a> <span>/</span> <a href="#">EN</a></div>
     <nav>
+      <a href="index.html"><span class="lang-tr">Ana Sayfa</span><span class="lang-en">Home</span></a>
       <a href="about.html"><span class="lang-tr">Hakkında</span><span class="lang-en">About</span></a>
+      <a href="team.html"><span class="lang-tr">Ekip</span><span class="lang-en">Team</span></a>
       <a href="works.html"><span class="lang-tr">Projeler</span><span class="lang-en">Works</span></a>
       <a href="approach.html"><span class="lang-tr">Yaklaşım</span><span class="lang-en">Approach</span></a>
       <a href="awards.html"><span class="lang-tr">Ödüller</span><span class="lang-en">Awards</span></a>
@@ -32,6 +34,7 @@
   <div class="mobile-nav">
     <a href="index.html"><span class="lang-tr">Ana Sayfa</span><span class="lang-en">Home</span></a>
     <a href="about.html"><span class="lang-tr">Hakkında</span><span class="lang-en">About</span></a>
+    <a href="team.html"><span class="lang-tr">Ekip</span><span class="lang-en">Team</span></a>
     <a href="works.html"><span class="lang-tr">Projeler</span><span class="lang-en">Works</span></a>
     <a href="approach.html"><span class="lang-tr">Yaklaşım</span><span class="lang-en">Approach</span></a>
     <a href="awards.html"><span class="lang-tr">Ödüller</span><span class="lang-en">Awards</span></a>
@@ -45,7 +48,10 @@
       <div class="section-label reveal">
         <span class="lang-tr">İletişim</span><span class="lang-en">Contact</span>
       </div>
-      <div class="contact-big reveal reveal-delay-1">LET'S BUILD<br><span>SOMETHING</span></div>
+      <div class="contact-big reveal reveal-delay-1">
+        <span class="lang-tr">BİRLİKTE<br><span>İNŞA EDELİM</span></span>
+        <span class="lang-en">LET'S BUILD<br><span>SOMETHING</span></span>
+      </div>
       <a href="mailto:emre@calik-architects.com"
         class="contact-email reveal reveal-delay-2">emre@calik-architects.com</a>
       <div class="contact-grid">
@@ -58,15 +64,14 @@
         </div>
         <form class="contact-form reveal reveal-delay-2">
           <div class="form-group">
-            <input type="text" placeholder="İsim / Name" required id="contact-name">
+            <input type="text" placeholder="İsim" data-tr="İsim" data-en="Name" required id="contact-name">
           </div>
           <div class="form-group">
-            <input type="email" placeholder="E-posta / Email" required id="contact-email-input">
+            <input type="email" placeholder="E-posta" data-tr="E-posta" data-en="Email" required id="contact-email-input">
           </div>
           <div class="form-group">
-            <textarea placeholder="Mesajınız / Your Message" required id="contact-message"></textarea>
+            <input type="text" placeholder="Mesajınız" data-tr="Mesajınız" data-en="Your Message" required id="contact-message">
           </div>
-          <!-- Buton script.js üzerinden yönetildiği için orijinal dilde kalabilir -->
           <button type="submit" class="submit-btn"><span class="lang-tr">MESAJ GÖNDER</span><span class="lang-en">SEND MESSAGE</span></button>
         </form>
       </div>

@@ -6,15 +6,33 @@ const savedLang = localStorage.getItem('site_lang') || 'tr';
 document.documentElement.lang = savedLang;
 
 document.addEventListener('DOMContentLoaded', () => {
+  const transition = document.querySelector('.page-transition');
+  if(transition) {
+    setTimeout(() => { transition.classList.add('entered'); }, 50);
+  }
+
   const langLinks = document.querySelectorAll('.lang-switch a, .mobile-lang-switch a');
   langLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
       const selectedLang = link.textContent.trim().toLowerCase();
       if(selectedLang === 'tr' || selectedLang === 'en') {
-        localStorage.setItem('site_lang', selectedLang);
-        document.documentElement.lang = selectedLang;
-        updateLangButtons(selectedLang);
+        const transition = document.querySelector('.page-transition');
+        if (transition) {
+          transition.classList.remove('entered');
+          transition.classList.add('exit');
+          setTimeout(() => {
+            localStorage.setItem('site_lang', selectedLang);
+            document.documentElement.lang = selectedLang;
+            updateLangButtons(selectedLang);
+            transition.classList.remove('exit');
+            setTimeout(() => { transition.classList.add('entered'); }, 50);
+          }, 600);
+        } else {
+          localStorage.setItem('site_lang', selectedLang);
+          document.documentElement.lang = selectedLang;
+          updateLangButtons(selectedLang);
+        }
       }
     });
   });
@@ -29,6 +47,11 @@ function updateLangButtons(lang) {
     } else {
       link.classList.remove('active');
     }
+  });
+
+  // Update placeholders
+  document.querySelectorAll('input[data-tr], textarea[data-tr]').forEach(el => {
+    el.placeholder = lang === 'tr' ? el.getAttribute('data-tr') : el.getAttribute('data-en');
   });
 }
 
@@ -135,8 +158,9 @@ document.querySelectorAll('a[href$=".html"], nav a[href$=".html"]').forEach(a =>
       e.preventDefault();
       const transition = document.querySelector('.page-transition');
       if (transition) {
-        transition.classList.add('active');
-        setTimeout(() => { window.location.href = href; }, 500);
+        transition.classList.remove('entered');
+        transition.classList.add('exit');
+        setTimeout(() => { window.location.href = href; }, 600);
       } else {
         window.location.href = href;
       }
@@ -157,5 +181,31 @@ if (contactForm) {
       btn.textContent = isEnglish ? 'SEND MESSAGE' : 'MESAJ GÖNDER'; 
       e.target.reset(); 
     }, 2500);
+  });
+}
+
+// ── HOVER PREVIEW ──
+const workRows = document.querySelectorAll('.work-row');
+const workPreview = document.querySelector('.work-preview');
+const previewImgs = document.querySelectorAll('.preview-img');
+
+if (workRows.length > 0 && workPreview) {
+  workRows.forEach(row => {
+    row.addEventListener('mouseenter', () => {
+      const targetId = row.dataset.preview;
+      if (!targetId) return;
+      workPreview.classList.add('active');
+      previewImgs.forEach(img => {
+        if (img.id === targetId) {
+          img.classList.add('active');
+        } else {
+          img.classList.remove('active');
+        }
+      });
+    });
+    row.addEventListener('mouseleave', () => {
+      workPreview.classList.remove('active');
+      previewImgs.forEach(img => img.classList.remove('active'));
+    });
   });
 }
